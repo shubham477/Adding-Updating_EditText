@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shubham_sharma"
+        android:textAlignment="center"
+        style="@style/NameStyle" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/NameStyle"
+        android:hint="@string/what_is_your_nickname"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/done"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/Button"
+        android:paddingStart="@dimen/layout_margin"
+        android:paddingEnd="@dimen/layout_margin"
+        android:text="@string/done" />
+
+    <TextView
+        android:id="@+id/display_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/NameStyle"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="@dimen/small_padding"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/star"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/dimen_8_dp">
+
+
+        <TextView
+            android:id="@+id/bio"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/bio" />
+    </ScrollView>
+
+</LinearLayout>
+
